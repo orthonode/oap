@@ -1,8 +1,8 @@
-﻿# Nexus Assurance Platform (NAP) v1.0
+﻿# Orthonode Assurance Platform (OAP) v1.0
 **Status:** Procurement-Ready | **Classification:** Proprietary / Closed Source
 
 ## 🛡️ Executive Summary
-NAP is a Defense-in-Depth hardware attestation stack designed for decentralized mapping networks, with initial evaluation parameters optimized for Hivemapper. Unlike heuristic fraud detection, NAP enforces **Physical Invariance** at the edge.
+OAP is a Defense-in-Depth hardware attestation stack developed by **Orthonode Systems**. It is designed for decentralized mapping networks, with initial evaluation parameters optimized for Hivemapper.
 
 ## 🏛️ Architecture
 The system utilizes a 4-Layer "Filter Cascade":
@@ -18,8 +18,8 @@ The system utilizes a 4-Layer "Filter Cascade":
 * **Recovery:** "Leaky Bucket" forgiveness algorithm confirmed in TEST_02_Soak_Stability_Proof.log.
 
 ## 📂 Repository Structure
-* `/nap_core`: The core logic library (Assurance Engine).
-* `/nap_daemon.py`: The executable service runner.
+* `/oap_core`: The core logic library (Assurance Engine).
+* `/oap_daemon.py`: The executable service runner.
 * `TEST_*.log`: Validation benchmarks.
 
 ---

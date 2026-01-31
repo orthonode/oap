@@ -1,4 +1,5 @@
-# FILE: nap_core/assurance.py
+@'
+# FILE: oap_core/assurance.py
 import math
 from collections import deque
 
@@ -9,7 +10,7 @@ VEHICLE_PROFILES = {
     'TRUCK': {'max_roll': 3.0,  'lat_g_scale': 0.8, 'vib_floor': 0.05}
 }
 
-class NexusAssurancePlatform:
+class OrthonodeAssurancePlatform:
     def __init__(self, vehicle_type='CAR'):
         self.profile = VEHICLE_PROFILES.get(vehicle_type, VEHICLE_PROFILES['CAR'])
         self.integrity_risk = 0.0  # Fraud (Blocking)
@@ -64,3 +65,4 @@ class NexusAssurancePlatform:
         if self.integrity_risk > 50: return "⛔ BLOCK (RC_FAIL_Integrity)"
         elif self.quality_risk > 50: return "⚠️ THROTTLE (RC_WARN_Quality)"
         else: return "✅ MINT (RC_PASS)"
+'@ | Out-File -Encoding UTF8 oap_core\assurance.py

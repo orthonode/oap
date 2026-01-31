@@ -1,4 +1,4 @@
-# FILE: nap_daemon.py
+# FILE: oap_daemon.py
 import sys
 import io
 import time
@@ -8,9 +8,9 @@ import random
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 try:
-    from nap_core.assurance import NexusAssurancePlatform
+    from oap_core.assurance import OrthonodeAssurancePlatform
 except ImportError:
-    print("❌ Error: Could not find nap_core/assurance.py")
+    print("❌ Error: Could not find oap_core/assurance.py")
     sys.exit(1)
 
 def generate_mock_data(tick):
@@ -45,20 +45,22 @@ def generate_mock_data(tick):
     return data
 
 def run_service():
-    print("🚀 NAP v1.0 | HIVEMAPPER INFRASTRUCTURE | SERVICE STARTED")
+    print("🚀 OAP v1.0 | ORTHONODE INFRASTRUCTURE | SERVICE STARTED")
     print("-------------------------------------------------------")
     
-    nap = NexusAssurancePlatform(vehicle_type='CAR')
+    oap = OrthonodeAssurancePlatform(vehicle_type='CAR')
     tick = 0
     
     try:
         while True:
             packet = generate_mock_data(tick)
-            verdict = nap.process_packet(packet)
+            verdict = oap.process_packet(packet)
             
             ts = time.strftime("%H:%M:%S")
-            # Format output for readability
-            risk_str = f"{nap.integrity_risk:.1f}"
+            
+            # FIXED: Changed 'nap' to 'oap'
+            risk_str = f"{oap.integrity_risk:.1f}"
+            
             print(f"[{ts}] TICK: {tick:03} | RISK: {risk_str.rjust(5)} | {verdict}")
             
             tick += 1
