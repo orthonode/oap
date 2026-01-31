@@ -2,7 +2,7 @@
 **Status:** Procurement-Ready | **Classification:** Proprietary / Closed Source
 
 ## 🛡️ Executive Summary
-NAP is a Defense-in-Depth hardware attestation stack designed specifically for the Hivemapper Network. Unlike heuristic fraud detection, NAP enforces **Physical Invariance** at the edge.
+NAP is a Defense-in-Depth hardware attestation stack designed for decentralized mapping networks, with initial evaluation parameters optimized for Hivemapper. Unlike heuristic fraud detection, NAP enforces **Physical Invariance** at the edge.
 
 ## 🏛️ Architecture
 The system utilizes a 4-Layer "Filter Cascade":
@@ -24,4 +24,4 @@ The system utilizes a 4-Layer "Filter Cascade":
 
 ---
 **Copyright (C) 2026 Orthonode Systems.**
-*For Hivemapper evaluation only. Do not distribute.*
+*For evaluation only. Do not distribute.*
