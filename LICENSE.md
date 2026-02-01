@@ -1,1 +1,1 @@
-Copyright (C) 2026 Orthonode Systems. All Rights Reserved. Unauthorized copying of this file, via any medium is strictly prohibited. Proprietary and confidential.
+Copyright (C) 2026 Orthonode Infrastructure Labs Private Limited. All Rights Reserved. Unauthorized copying of this file, via any medium, is strictly prohibited. Proprietary and confidential.
