@@ -1,3 +1,17 @@
+# -----------------------------------------------------------------------------
+# Orthonode Assurance Platform (OAP) | Production v2.5.0
+# Core Logic: assurance.py
+#
+# Copyright (c) 2026 Orthonode Infrastructure Labs Private Limited.
+# All Rights Reserved.
+#
+# PROPRIETARY & CONFIDENTIAL: This source code is a trade secret of 
+# Orthonode Infrastructure Labs. Unauthorized copying, modification, or 
+# distribution of this file via any medium is strictly prohibited.
+#
+# Engineered for the Verification of Physical Reality.
+# -----------------------------------------------------------------------------
+
 @'
 # FILE: oap_core/assurance.py
 import math

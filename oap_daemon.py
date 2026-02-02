@@ -1,3 +1,17 @@
+# -----------------------------------------------------------------------------
+# Orthonode Assurance Platform (OAP) | Service Daemon v2.5.0
+# Execution Layer: oap_daemon.py
+#
+# Copyright (c) 2026 Orthonode Infrastructure Labs Private Limited.
+# All Rights Reserved.
+#
+# PROPRIETARY & CONFIDENTIAL: This file is part of the OAP production stack.
+# Unauthorized execution, reverse engineering, or redistribution of this
+# service daemon is strictly prohibited.
+#
+# Operational Jurisdiction: Balaghat / Bhopal, MP, India.
+# -----------------------------------------------------------------------------
+
 # FILE: oap_daemon.py
 import sys
 import io
@@ -45,7 +59,7 @@ def generate_mock_data(tick):
     return data
 
 def run_service():
-    print("🚀 OAP v1.0 | ORTHONODE INFRASTRUCTURE | SERVICE STARTED")
+    print("🚀 OAP v2.5.0 | ORTHONODE INFRASTRUCTURE | SERVICE STARTED")
     print("-------------------------------------------------------")
     
     oap = OrthonodeAssurancePlatform(vehicle_type='CAR')
